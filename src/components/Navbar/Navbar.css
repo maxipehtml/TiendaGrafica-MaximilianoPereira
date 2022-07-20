@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: row;
     width: 90%;
-    margin: auto;
+    margin: 15px auto;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    
+    
 
 }
 
@@ -21,48 +23,113 @@ img{
     cursor: pointer;
 }
 
+
 /* CSS */
-.navbar-inner button {
+.button-78 {
   align-items: center;
   appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
   box-sizing: border-box;
-  color: #36395A;
+  color: #fff;
   cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 800;
   justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  text-transform: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
 }
 
-.navbar-inner button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
 }
 
-.navbar-inner button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
+.button-78:before,
+.button-78:after {
+  border-radius: 50px;
 }
 
-.navbar-inner button:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
+.button-78:before {
+  background-image: linear-gradient(92.83deg, #7226ff 0, #13f9a8 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#0f1d54 0, #0c0d0d 100%);
+  bottom: 5px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 0px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(255, 179, 38) 0%, rgb(145, 19, 249) 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: .24;
 }

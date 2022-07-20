@@ -1,24 +1,25 @@
 import './Navbar.css';
 import logo from '../img/logo.png';
+import CartWidget from '../CartWidget/CartWidget';
+
 
 const Navbar = () => {
     return (
         <nav className='navbar'>
-                        <div>
+            <div>
                 <h1>TIENDA</h1>
             </div>
-
-
-
+            
             <div className='navbar-inner'>
-                <button>CUADROS</button>
-                <button>JOYAS</button>
-                <button>OTROS</button>
+                <button className='button-78'>CUADROS</button>
+                <button className='button-78'>JOYAS</button>
+                <button className='button-78'>OTROS</button>
             </div>
+            <CartWidget/>
             <div>
                 <img src={logo} alt='logo' />
             </div>
-
+            
         </nav>
     )
 }

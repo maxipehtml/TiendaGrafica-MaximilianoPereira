@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Montserrat:wght@300&family=Smooch+Sans:wght@300&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
+
 
 .App {
   text-align: center;
 }
 
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 
 .App-header {
   background: rgb(2,0,36);
@@ -30,15 +30,3 @@
   color: white;
 }
 
-/* .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
