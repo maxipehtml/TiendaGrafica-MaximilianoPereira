@@ -1,5 +1,5 @@
 import './Navbar.css';
-import logo from '../img/logo.png';
+/* import logo from 'img/logo.png'; */
 import CartWidget from '../CartWidget/CartWidget';
 
 
@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
             <CartWidget/>
             <div>
-                <img src={logo} alt='logo' />
+                <img src='img/logo.png' alt='logo' />
             </div>
             
         </nav>

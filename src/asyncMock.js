@@ -1,12 +1,40 @@
 const products = [
     { 
         id: '1', 
-        name: 'iphone 12', 
-        price: 1000, 
-        category: 'celular', 
-        img:'https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020.jpg.og.jpg?202108061040', 
-        stock: 25, 
-        description:'Descripcion de Iphone 12'
+        name: 'Print Id 1', 
+        price: 1200, 
+        category: 'cuadros', 
+        img:'https://drive.google.com/uc?export=view&id=1fULrY1RLkVD-3Npg0RBzFXWEzkbRjrAC',
+        stock: 100, 
+        description:''
     },
-    { id: '2', name: 'samsung s21', price: 800, category: 'celular', img:'https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155378-phones-review-hands-on-samsung-galaxy-s21-ultra-image1-luae09ici4.JPG', stock: 16, description:'Descripcion de Samsung s21'}
+    { 
+        id: '2', 
+        name: 'Print Id 2',  
+        price: 1000, 
+        category: 'cuadros', 
+        img:'https://drive.google.com/uc?export=view&id=1pGsiDB9c6coLZkk7PF6OwV9YtEJjslTl', 
+        stock: 100, 
+        description:''
+    },
+    { 
+        id: '3', 
+        name: 'Print Id 3',  
+        price: 1400, 
+        category: 'cuadros', 
+        img:'https://drive.google.com/uc?export=view&id=1lF025nCdsreS04Qq6Xm-nAkAHpLdbWUf', 
+        stock: 100, 
+        description:''
+    }
+   
 ]
+
+export const  getProducts = () => {
+    return new Promise((resolve) => {
+        
+        setTimeout(() => {
+            resolve(products)
+        }, 2000)
+    })
+}
+
