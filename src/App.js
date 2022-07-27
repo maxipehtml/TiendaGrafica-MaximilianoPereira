@@ -5,9 +5,10 @@ import Counter from './components/Counter/Counter.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 
 function App() {
-
+  
   const handleOnAdd = (quantity) => {
     console.log('Agregaste '+quantity+' items al carrito');
+
   }
 
   return (
@@ -18,8 +19,8 @@ function App() {
       </header>
 
       <main>
-      <ItemListContainer greeting="Hola Coders" />
-      <Counter stock={9} initial={1} onAdd={handleOnAdd}/>
+      <ItemListContainer greeting="Tienda de Cuadros" />
+      <Counter stock={10} initial={1} onAdd={handleOnAdd}/>
       </main>
     </div>
   );
