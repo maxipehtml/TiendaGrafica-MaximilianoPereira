@@ -6,7 +6,9 @@ const products = [
         category: 'cuadros', 
         img:'https://drive.google.com/uc?export=view&id=1fULrY1RLkVD-3Npg0RBzFXWEzkbRjrAC',
         stock: 100, 
-        description:'Beautiful cymatic mandala eyes with lotus crystal flowers and mushrooms'
+        montaje: 'Cuadro Impresión sobre Bastidor de Madera', 
+        medidas: ' 30cm x 40cm - 40cm x 60cm',
+        description:'Diseñado a través de Inteligencia Artificial. Prompt:"Beautiful cymatic mandala eyes with lotus crystal flowers and mushrooms"'
     },
     { 
         id: '2', 
@@ -15,7 +17,9 @@ const products = [
         category: 'cuadros', 
         img:'https://drive.google.com/uc?export=view&id=1pGsiDB9c6coLZkk7PF6OwV9YtEJjslTl', 
         stock: 100, 
-        description:'"Beautiful mandala eyes with lotus flowers"'
+        montaje: 'Cuadro Impresión sobre Bastidor de Madera', 
+        medidas: ' 30cm x 40cm - 40cm x 60cm',
+        description:'Diseñado a través de Inteligencia Artificial. Prompt:"Beautiful mandala eyes with lotus flowers"'
     },
     { 
         id: '3', 
@@ -24,7 +28,9 @@ const products = [
         category: 'cuadros', 
         img:'https://drive.google.com/uc?export=view&id=1lF025nCdsreS04Qq6Xm-nAkAHpLdbWUf', 
         stock: 100, 
-        description:`Cuadro Impresion sobre Bastidor de Madera. \n Diseñado a traves de Inteligencia Artificial. \n Prompt:"Beautiful fractal eyes tree in nebula galaxy"`
+        montaje: 'Cuadro Impresión sobre Bastidor de Madera', 
+        medidas: ' 30cm x 40cm - 40cm x 60cm',
+        description:`Diseñado a través de Inteligencia Artificial. \n Prompt:"Beautiful fractal eyes tree in nebula galaxy"`
     }
    
 ]
