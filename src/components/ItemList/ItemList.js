@@ -3,11 +3,14 @@ import "./ItemList.css"
 
 const ItemList = ({products}) => {
     return (
+        <> 
         <ul className="cards0 ">
             {products.map(product => (
-            <Item product={product}/>
+            <Item producte={product}/>
             ))}
         </ul>
+        </>
+
 
     )
 
