@@ -1,10 +1,10 @@
-.cards1 {
+.cards2 {
     color: rgb(206, 255, 253);
-    margin: 30px 0;
+    margin: 30px 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    flex-direction: row;
+    text-align:left;
+    gap: 30px;
     box-shadow: rgba(153, 46, 240, 0.4) 0 2.5px 2px, rgba(0, 247, 255, 0.3) 0 6px 5px, rgba(46, 240, 214, 0.25) 0 12px 10px, rgba(46, 240, 46, 0.25) 0 20px 15px, rgba(240, 162, 46, 0.45) 0 41px 50px;
     border-radius: 12px;
     background: rgb(2,0,36);
@@ -14,18 +14,17 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
 }
 
-.cards1 h1{
+.cards2 h1{
     margin-top: 15px;
     color: rgb(240, 240, 240);
     text-shadow: 1px 1px 1px rgb(68, 0, 255);
 }
-.cards1 h3{
-    margin-bottom: 15px;
-
+.cardsDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
 }
-
-
-.imagenProduct{
-    width:15rem;
-
+.cards2 img{
+    border-radius: 10px;
 }
