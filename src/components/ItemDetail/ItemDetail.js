@@ -4,7 +4,7 @@ import './ItemDetail.css'
 
 const ItemDetail = ({ products }) => {
 
-    //Fetch a DolarApi///////////////////
+//Fetch a DolarApi///////////////////
     const [dolarblue, setBlue] = useState(0);
     const [dolarliqui, setLiqui] = useState(0);
 
@@ -25,6 +25,7 @@ const ItemDetail = ({ products }) => {
         })
         .then (response => setLiqui(response.venta))
     },[]) 
+///////////////////////////////
 
     return (
         <li key={products.id}>
@@ -36,10 +37,12 @@ const ItemDetail = ({ products }) => {
                         </div>
                         <div className="cardsDescription">
                             <h1>{products.name.toUpperCase()}</h1>
-                            <p>Descripcion: {products.description}</p>
+                            <h3>Descripcion: {products.description}</h3>
+                            <h3>Montaje: {products.montaje}</h3>
+                            <h3>Medidas disponibles:  {products.medidas}</h3>
                             <h4>Precio Dolar Blue: $ {(products.price*dolarblue).toFixed()}</h4>
                             <h4>Precio Dolar con Liqui: $ {(products.price*dolarliqui).toFixed()}</h4>
-                            <h3>Stock: {products.stock}</h3>
+                            <h3>Stock disponible: {products.stock} unidades</h3>
                         </div>
                         <div>
 

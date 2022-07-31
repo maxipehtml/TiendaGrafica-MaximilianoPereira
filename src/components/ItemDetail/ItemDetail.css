@@ -28,3 +28,7 @@
 .cards2 img{
     border-radius: 10px;
 }
+
+.cards2 h4{
+    margin-bottom: -15px;
+}
