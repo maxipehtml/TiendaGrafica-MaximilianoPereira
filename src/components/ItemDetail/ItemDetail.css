@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     text-align:left;
+    justify-content: center;
     gap: 30px;
     box-shadow: rgba(153, 46, 240, 0.4) 0 2.5px 2px, rgba(0, 247, 255, 0.3) 0 6px 5px, rgba(46, 240, 214, 0.25) 0 12px 10px, rgba(46, 240, 46, 0.25) 0 20px 15px, rgba(240, 162, 46, 0.45) 0 41px 50px;
     border-radius: 12px;
@@ -23,12 +24,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   
-}
-.cards2 img{
-    border-radius: 10px;
+    margin: 0 10px; 
 }
 
-.cards2 h4{
-    margin-bottom: -15px;
+
+.imagenProduct{
+    width:15rem;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 132, 255, 0.774);
+}
+
+@media (max-width: 700px) {
+    .cards2{
+        flex-wrap: wrap;
+        margin: 30px 15px;
+    }
+    .imagenProduct{
+        margin-top: 12px;
+        width:18rem;
+    }
 }
