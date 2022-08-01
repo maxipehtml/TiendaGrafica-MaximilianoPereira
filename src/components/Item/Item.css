@@ -24,8 +24,21 @@
 
 }
 
-
-.imagenProduct{
+.imagenProduct0{
     width:15rem;
-
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 132, 255, 0.774);
 }
+@media (max-width: 700px) {
+    .cards1{
+        margin: 30px 0px;
+        max-width: 100%;
+    }
+    .imagenProduct0{
+        width:18rem;
+    }
+}
+
+
+

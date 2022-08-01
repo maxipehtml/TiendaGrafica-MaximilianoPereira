@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className='navbar-inner'>
                 <button className='button-78'>CUADROS</button>
                 <button className='button-78'>JOYAS</button>
-                <button className='button-78'>OTROS</button>
+                <button className='button-78'>SERVICIOS</button>
             </div>
             <CartWidget/>
             <div>

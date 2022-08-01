@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 93%;
     margin: 15px auto;
     align-items: center;
     justify-content: space-between;
@@ -67,6 +67,11 @@ img{
 @media (min-width: 768px) {
   .button-78 {
     padding: 19px 32px;
+  }
+}
+@media (max-width: 402px) {
+  .navbar-inner{
+    flex-wrap: wrap;
   }
 }
 

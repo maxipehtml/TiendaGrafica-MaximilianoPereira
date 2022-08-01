@@ -31,7 +31,7 @@ const Item = ({ producte }) => {
         <li key={producte.id}>
                     <div className="cards1">
                         <h1>{producte.name.toUpperCase()}</h1>
-                        <img className="imagenProduct" src={producte.img} alt="" />
+                        <img className="imagenProduct0" src={producte.img} alt="" />
                         
                         <button className='button-78'>Ver Detalles</button>
                         <h2>$ {producte.price*dolarblue}</h2>
