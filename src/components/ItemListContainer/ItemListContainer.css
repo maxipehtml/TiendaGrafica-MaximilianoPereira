@@ -1,3 +1,5 @@
-h1{ 
+
+.tituloTienda{
     text-shadow: 1px 1px .5px lightblue;
+    margin: 15px 0;
 }

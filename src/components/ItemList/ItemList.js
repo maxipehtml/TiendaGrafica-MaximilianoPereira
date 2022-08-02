@@ -10,10 +10,7 @@ const ItemList = ({products}) => {
             ))}
         </ul>
         </>
-
-
     )
-
 }
 
 export default ItemList
