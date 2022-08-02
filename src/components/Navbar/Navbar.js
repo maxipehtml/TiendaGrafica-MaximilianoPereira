@@ -1,26 +1,32 @@
 import './Navbar.css';
 /* import logo from 'img/logo.png'; */
 import CartWidget from '../CartWidget/CartWidget';
+import {Link} from 'react-router-dom';
 
 
 const Navbar = () => {
     return (
-        <nav className='navbar'>
+        <div className="App-header">
+                <nav className='navbar'>
             <div>
-                <h1>TIENDA</h1>
+                <Link to='/' className='button-63'>TIENDA</Link>
             </div>
             
             <div className='navbar-inner'>
-                <button className='button-78'>CUADROS</button>
+
+                <Link to='/category/cuadros' className='button-78'>CUADROS</Link>
                 <button className='button-78'>JOYAS</button>
                 <button className='button-78'>SERVICIOS</button>
             </div>
             <CartWidget/>
             <div>
-                <img src='img/logo.png' alt='logo' />
+            <Link to='/'><img src='img/logo.png' alt='logo' /></Link>
+                
             </div>
             
-        </nav>
+        </nav> 
+        </div>
+
     )
 }
 
