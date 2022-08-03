@@ -15,6 +15,8 @@
 }
 
 .cards1 h1{
+    font-size: 1.9rem;
+    padding: 0 15px;
     margin-top: 15px;
     color: rgb(240, 240, 240);
     text-shadow: 1px 1px 1px rgb(68, 0, 255);

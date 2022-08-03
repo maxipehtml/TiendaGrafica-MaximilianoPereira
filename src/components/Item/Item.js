@@ -15,6 +15,8 @@ const Item = ({ producte }) => {
         return response.json()
         })
         .then (response => setBlue(response.venta))
+        .catch(error => {
+            setBlue(300)})
     },[])
     ///////////////////////////////
 

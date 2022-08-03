@@ -13,25 +13,18 @@ const ItemListContainer = (props) => {
 
     useEffect(() =>{
 
-        if(categoryId){
-        getProductsByCategory(categoryId).then(response => {
+        const dualFunction = categoryId ? getProductsByCategory : getProducts;
+
+        
+        dualFunction(categoryId).then(response => {
             setProducts(response)
         }).catch(error => {
             console.log(error)
         }).finally(() => {
             setLoading(false)
         }) 
-        }else{
+    }, [categoryId]);
 
-        getProducts().then(response => {
-            setProducts(response)
-        }).catch(error => {
-            console.log(error)
-        }).finally(() => {
-            setLoading(false)
-        })
-    }
-        },[categoryId])
 
     if(loading){
         return <h2>Cargando Productos !!!</h2>

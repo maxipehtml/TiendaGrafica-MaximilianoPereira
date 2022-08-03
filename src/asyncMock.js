@@ -5,7 +5,7 @@ const products = [
         price: 10, 
         category: 'cuadros', 
         img:'https://drive.google.com/uc?export=view&id=1fULrY1RLkVD-3Npg0RBzFXWEzkbRjrAC',
-        stock: 100, 
+        stock: 10, 
         montaje: 'Cuadro Impresión sobre Bastidor de Madera', 
         medidas: 'Medidas: 30cm x 40cm ',
         description:'Diseñado a través de Inteligencia Artificial. Prompt:"Beautiful cymatic mandala eyes with lotus crystal flowers and mushrooms"'
@@ -16,7 +16,7 @@ const products = [
         price: 12, 
         category: 'cuadros', 
         img:'https://drive.google.com/uc?export=view&id=1pGsiDB9c6coLZkk7PF6OwV9YtEJjslTl', 
-        stock: 100, 
+        stock: 5, 
         montaje: 'Cuadro Impresión sobre Bastidor de Madera', 
         medidas: 'Medidas: 30cm x 40cm ',
         description:'Diseñado a través de Inteligencia Artificial. Prompt:"Beautiful mandala eyes with lotus flowers"'
@@ -27,7 +27,7 @@ const products = [
         price: 11, 
         category: 'cuadros', 
         img:'https://drive.google.com/uc?export=view&id=1lF025nCdsreS04Qq6Xm-nAkAHpLdbWUf', 
-        stock: 100, 
+        stock: 0, 
         montaje: 'Cuadro Impresión sobre Bastidor de Madera', 
         medidas: 'Medidas: 30cm x 40cm ',
         description:`Diseñado a través de Inteligencia Artificial. \n Prompt:"Beautiful fractal eyes tree in nebula galaxy"`
@@ -35,8 +35,8 @@ const products = [
 
     {
         id: '3', 
-        name: 'Joya Fungi',  
-        price: 14, 
+        name: 'Anillo Abrazo',  
+        price: 12, 
         category: 'joyas',
         img:'https://drive.google.com/uc?export=view&id=1aVBTcEvOfGuKamkTLA67iIRjyNUrVWsx', 
         stock: 5, 
@@ -63,7 +63,7 @@ export const  getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
-        }, 2000)
+        }, 500)
     })
 }
 
