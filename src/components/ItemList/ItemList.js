@@ -6,7 +6,9 @@ const ItemList = ({products}) => {
         <> 
         <ul className="cards0 ">
             {products.map(product => (
+                <li key={product.id}>
             <Item producte={product}/>
+            </li>
             ))}
         </ul>
         </>

@@ -27,7 +27,7 @@ const products = [
         price: 11, 
         category: 'cuadros', 
         img:'https://drive.google.com/uc?export=view&id=1lF025nCdsreS04Qq6Xm-nAkAHpLdbWUf', 
-        stock: 0, 
+        stock: 3, 
         montaje: 'Cuadro Impresión sobre Bastidor de Madera', 
         medidas: 'Medidas: 30cm x 40cm ',
         description:`Diseñado a través de Inteligencia Artificial. \n Prompt:"Beautiful fractal eyes tree in nebula galaxy"`

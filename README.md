@@ -7,3 +7,4 @@ Para clonar el proyecto:
 3- Ubicarse en la carpeta recien creada, escribiendo: cd TiendaGrafica-MaximilianoPereira
 4- Instalar dependencias escribiendo: npm install
 5- Una vez instalado, estamos listos para comenzar el entorno escribiendo: npm run start
+

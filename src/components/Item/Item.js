@@ -21,7 +21,7 @@ const Item = ({ producte }) => {
     ///////////////////////////////
 
     return (
-        <li key={producte.id}>
+        
                     <div className="cards1">
                         <h1>{producte.name.toUpperCase()}</h1>
                         <img className="imagenProduct0" src={producte.img} alt="" />
@@ -30,7 +30,7 @@ const Item = ({ producte }) => {
                         <h2>$ {producte.price*dolarblue}</h2>
                         <h3>Stock: {producte.stock}</h3>
                     </div>
-        </li>
+        
 
     )
 }
