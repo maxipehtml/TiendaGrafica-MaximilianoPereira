@@ -15,8 +15,8 @@ const Navbar = () => {
             <div className='navbar-inner'>
 
                 <Link to='/category/cuadros' className='button-78'>CUADROS</Link>
-                <button className='button-78'>JOYAS</button>
-                <button className='button-78'>SERVICIOS</button>
+                <Link to='/category/joyas' className='button-78'>JOYAS</Link>
+                <Link to='/category/servicios' className='button-78'>SERVICIOS</Link>
             </div>
             <CartWidget/>
             <div>

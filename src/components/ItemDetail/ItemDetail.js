@@ -3,6 +3,9 @@ import './ItemDetail.css'
 import Counter from '../Counter/Counter'
 import { getDolar } from '../ValorDolar/ValorDolar';
 
+/* import ValorDolar from '../ValorDolar/ValorDolar'; */
+
+
 
 console.log(getDolar);
 
@@ -12,7 +15,7 @@ const ItemDetail = ({ products }) => {
         console.log('Agregaste '+quantity+' items al carrito');    
     }
 
-    const [dolar, setDolar] = useState(10);
+/*     const [dolar, setDolar] = useState(10);
  
     useEffect(() => {
 
@@ -23,7 +26,7 @@ const ItemDetail = ({ products }) => {
             console.log(error)
         }).finally(() => {
         })
-    },[]); 
+    },[]);  */
 ///////////////////////////////
 
     return (
@@ -38,9 +41,9 @@ const ItemDetail = ({ products }) => {
                             <h3>Descripcion: {products.description}</h3>
                             <h3>{products.montaje}</h3>
                             <h3>{products.medidas}</h3>
-                            <h4>Precio: $ {(products.price*dolar).toFixed()}</h4>
+                            <h4>Precio: $ {(products.price*300).toFixed()}</h4>
                             <h3>Stock disponible: {products.stock} unidades</h3>
-                            <Counter stock={10} initial={1} onAdd={handleOnAdd}/>
+                            <Counter stock={products.stock} initial={0} onAdd={handleOnAdd}/>
                         </div>
                         <div>
                         </div>
