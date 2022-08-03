@@ -47,7 +47,7 @@ const Counter = ({stock, initial, onAdd }) => {
             <div>
 
                 <button disabled={count === 0 } onClick={() => { onAdd(count); console.log(stock-count);}} className="button-64" >
-                    <span class="text">Agregar Al Carrito</span>
+                    <span className="text">Agregar Al Carrito</span>
                 </button>
 
             </div>

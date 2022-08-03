@@ -14,20 +14,20 @@ const ItemDetail = ({ products }) => {
     const handleOnAdd = (quantity) => {
         console.log('Agregaste '+quantity+' items al carrito');    
     }
+/////////////
+    const [dolarblue, setBlue] = useState(0);
 
-/*     const [dolar, setDolar] = useState(10);
- 
     useEffect(() => {
 
-        getDolar().then(response => {
-            setDolar(response)
-            console.log(response);
-        }).catch(error => {
-            console.log(error)
-        }).finally(() => {
+        fetch('https://cors-solucion.herokuapp.com/https://api-dolar-argentina.herokuapp.com/api/dolarblue')
+        .then(response => {
+        return response.json()
         })
-    },[]);  */
-///////////////////////////////
+        .then (response => setBlue(response.venta))
+        .catch(error => {
+            setBlue(300)})
+    },[])
+    ///////////////////////////////
 
     return (
         <li key={products.id}>
@@ -41,7 +41,7 @@ const ItemDetail = ({ products }) => {
                             <h3>Descripcion: {products.description}</h3>
                             <h3>{products.montaje}</h3>
                             <h3>{products.medidas}</h3>
-                            <h4>Precio: $ {(products.price*300).toFixed()}</h4>
+                            <h4>Precio: $ {(products.price*dolarblue).toFixed()}</h4>
                             <h3>Stock disponible: {products.stock} unidades</h3>
                             <Counter stock={products.stock} initial={0} onAdd={handleOnAdd}/>
                         </div>
