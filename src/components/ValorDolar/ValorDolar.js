@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 //Fetch a DolarApi///////////////////
 
 const ValorDolar = () => {
-/*  const [dolarblue, setBlue] = useState(0);
+
+ const [dolarblue, setBlue] = useState(0);
 
   useEffect(() => {
 
@@ -14,8 +15,8 @@ const ValorDolar = () => {
       })
       .then((response) => setBlue(response.venta+500))
       .catch(error => {setBlue(300)});
-  }, []); */
-  const dolarblue =10;
+  }, []);
+  
 
  return (dolarblue);
   ///////////////////////////////
@@ -23,5 +24,9 @@ const ValorDolar = () => {
 
 
 export const  getDolar = () => {
-    return (ValorDolar);
+  return new Promise((resolve) => {
+    setTimeout(() => {
+        resolve(ValorDolar())
+    }, 500)
+})
 }

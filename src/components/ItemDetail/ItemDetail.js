@@ -1,21 +1,23 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import './ItemDetail.css'
 import Counter from '../Counter/Counter'
-import { getDolar } from '../ValorDolar/ValorDolar';
-
-/* import ValorDolar from '../ValorDolar/ValorDolar'; */
+/* import { getDolar } from '../ValorDolar/ValorDolar'; */
 
 
-
-console.log(getDolar);
 
 const ItemDetail = ({ products }) => {
 
+    const [quantity, setQuantity] = useState(0);
+
     const handleOnAdd = (quantity) => {
         console.log('Agregaste '+quantity+' items al carrito');    
+        setQuantity(quantity);
     }
-/////////////
+
+ /////////////
     const [dolarblue, setBlue] = useState(0);
+
 
     useEffect(() => {
 
@@ -43,7 +45,9 @@ const ItemDetail = ({ products }) => {
                             <h3>{products.medidas}</h3>
                             <h4>Precio: $ {(products.price*dolarblue).toFixed()}</h4>
                             <h3>Stock disponible: {products.stock} unidades</h3>
-                            <Counter stock={products.stock} initial={0} onAdd={handleOnAdd}/>
+                            <>
+                            { quantity > 0 ? <Link to="/cart" className="button-78"  style={{margin: "15px auto"}}>Ir al CARRITO</Link> : <Counter stock={products.stock} initial={0} onAdd={handleOnAdd}/>}
+                            </>
                         </div>
                         <div>
                         </div>
