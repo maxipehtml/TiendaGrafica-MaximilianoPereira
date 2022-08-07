@@ -49,13 +49,13 @@ const products = [
     {
         id: '4', 
         name: 'Diseño A/V',  
-        price: 15, 
+        price: '100', 
         category: 'servicios',
         img:'https://drive.google.com/uc?export=view&id=1jy-lI-mG220kYnh5uH3PMh4r-yfDJCXv', 
         stock: 1, 
-        montaje: 'Animacion Web Audiovisual/Video Animado y VR/Diseño de Imagen', 
+        montaje: 'Programación Web Audiovisual/Video Animado y VR/Diseño de Imagen', 
         medidas: 'Pedir Cotizacion',
-        description:'Servicio de diseño Audiovisual'
+        description:'Servicio de Diseño Audiovisual'
     }
 ]
 
@@ -63,7 +63,7 @@ export const  getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
-        }, 500)
+        }, 10)
     })
 }
 
@@ -71,7 +71,7 @@ export const  getProductsByID = (id) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.find(prod => prod.id === id))
-        }, 500)
+        }, 10)
     })
 }
 
@@ -79,6 +79,6 @@ export const getProductsByCategory = (categoryId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.filter(product => product.category === categoryId))
-        }, 500)
+        }, 10)
     })
 }

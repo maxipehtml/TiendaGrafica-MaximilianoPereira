@@ -85,8 +85,9 @@ img{
   .button-78 {
     padding: 19px 32px;
   }
+
 }
-@media (max-width: 402px) {
+@media (max-width: 435px) {
   .navbar-inner{
     flex-wrap: wrap;
   }
