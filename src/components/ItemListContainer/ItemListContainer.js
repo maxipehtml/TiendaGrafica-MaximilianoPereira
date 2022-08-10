@@ -11,6 +11,8 @@ const ItemListContainer = (props) => {
 
     const {categoryId} = useParams()
 
+    /* const category = categoryId.toUpperCase(); */
+
     useEffect(() =>{
 
         const dualFunction = categoryId ? getProductsByCategory : getProducts;
@@ -34,7 +36,7 @@ const ItemListContainer = (props) => {
     <>
 
         <h1 className='tituloTienda'>
-            {props.greeting}
+            {props.greeting} {categoryId}
         </h1>
         <ItemList products={products}/>
 

@@ -3,3 +3,7 @@
     height: 50px;
     filter: invert(100%)
 }
+.linkContador{
+    text-decoration: none;
+    color: inherit;
+}

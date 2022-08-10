@@ -2,11 +2,10 @@ import "./Navbar.css";
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 import { data } from "../Navbar/DataNavbar";
-import { Fragment } from "react";
-
-console.log(data);
+import { Fragment} from "react";
 
 const Navbar = () => {
+
     return (
         <div className="App-header">
             <nav className="navbar">
