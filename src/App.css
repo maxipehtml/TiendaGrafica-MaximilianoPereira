@@ -10,3 +10,9 @@
 .App {
   text-align: center;
 }
+
+.bigBanner{
+  font-size: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px rgba(0, 132, 255, 0.774);
+}
