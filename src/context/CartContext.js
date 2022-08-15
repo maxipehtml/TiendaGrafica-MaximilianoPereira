@@ -1,9 +1,11 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useContext } from "react";
+import NotificationContext from "../notifications/Notification";
 
 export const CartContext = createContext()
 
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
+    const {setNotification} = useContext(NotificationContext)
 
     const addItem = (productToAdd) => {
         if (!isInCart(productToAdd.id)) {
@@ -40,10 +42,14 @@ export const CartContextProvider = ({ children }) => {
 
     const removeItem = (id) => {
         const cartWithoutItem = cart.filter(prod => prod.id !== id);
+        if(cartWithoutItem.length===0){
+            
+        }
         setCart(cartWithoutItem)
     }
 
     const clearCart = () => {
+        setNotification('No hay productos en el carrito', 'error',2)
         setCart([])
     }
 
@@ -52,9 +58,17 @@ export const CartContextProvider = ({ children }) => {
         return products?.quantity
     }
 
+    const getTotal = () => {
+        let total = 0
+        cart.forEach(prod => {
+            total += (prod.quantity*prod.price);
+        })
+        return total
+    }
+
     return (
         <CartContext.Provider
-            value={{ cart, addItem, isInCart, removeItem, clearCart, getQuantity, getProductQuantity }}>
+            value={{ cart, addItem, isInCart, removeItem, clearCart, getQuantity, getProductQuantity, getTotal }}>
             {children}
         </CartContext.Provider>
     )

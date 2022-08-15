@@ -11,8 +11,8 @@ const CartWidget = () => {
 
 
     return (
-        <Link to= '/cart' className='linkContador'>
-            <img className= "carrito" src='img/carrito80x80.png' alt="carro"/>
+        <Link to= '/cart' className={`${quantity === 0 ? 'disabled' : ''} linkContador`} >
+            <img className= 'carrito' src='img/carrito80x80.png' alt="carro"/>
             {quantity}
         </Link>
     );

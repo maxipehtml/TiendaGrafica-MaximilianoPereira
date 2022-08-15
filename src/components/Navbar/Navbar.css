@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 93%;
-    margin: 15px auto;
+    margin: 25px auto;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
@@ -61,7 +61,7 @@ img{
   font-size: 16px;
   font-weight: 800;
   justify-content: center;
-  line-height: 24px;
+  line-height: px;
   margin: 0;
   min-height: 64px;
   outline: none;

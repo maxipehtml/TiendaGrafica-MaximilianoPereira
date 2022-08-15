@@ -7,3 +7,6 @@
     text-decoration: none;
     color: inherit;
 }
+.disabled{
+    display: none;
+}
