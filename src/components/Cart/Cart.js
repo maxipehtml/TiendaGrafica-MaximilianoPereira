@@ -1,8 +1,8 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../context/CartContext"
 import CartProduct from "./CartProduct";
-import NotificationContext from "../../notifications/Notification";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import './Cart.css'
 
 const Cart = () => {
     const { getQuantity, clearCart, getTotal, cart } = useContext(CartContext)
@@ -10,7 +10,7 @@ const Cart = () => {
     const cantidadTotal = getQuantity()
     const total = getTotal()
 
-    const {setNotification} = useContext(NotificationContext)
+
 
 
     let noProd = cantidadTotal === 0
@@ -27,7 +27,7 @@ const Cart = () => {
     if ( noProd ) {
         
         return (
-            <div>
+            <div className="carritoCompras">
             <h2>Agrega productos al carrito para realizar la compra</h2>
             <ItemListContainer greeting="Te sugerimos los siguientes productos :" />
             </div>
@@ -44,9 +44,9 @@ const Cart = () => {
             </h1>
             {cart.map(prod => <CartProduct key={prod.id} {...prod}/>)}
             <h2>Total: U$DT {total}</h2>
-            <div>
-                <button onClick={() => clearCart()} className="">Vaciar Carrito</button>
-                <button className="">Confimar Carrito</button>
+            <div className="confirmarCarrito">
+                <button onClick={() => clearCart()} className="button-78 vaciarCarrito">Vaciar Carrito</button>
+                <button className="button-78 btn-confirmar">Confimar Carrito</button>
             </div>
             <ItemListContainer greeting="Segui comprando nuestros productos" />
 
