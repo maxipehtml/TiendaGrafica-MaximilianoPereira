@@ -54,7 +54,7 @@ const ItemDetail = ({ id, name, img, description, price, stock, montaje, medidas
                             <h3>Descripcion: {description}</h3>
                             <h3>{montaje}</h3>
                             <h3>{medidas}</h3>
-                            <h4>Precio: $ {price}</h4>
+                            <h4>Precio: U$DT {price}</h4>
                             <h3>Stock disponible: {stock} unidades</h3>
                             <>
                             { quantity > 0 ? <Link to="/cart" className="button-78"  style={{margin: "15px auto"}}>Ir al CARRITO</Link> : <Counter stock={stock}  onAdd={handleOnAdd} initial={quantityAdded}/>}

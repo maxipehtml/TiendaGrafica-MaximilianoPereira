@@ -28,7 +28,7 @@ const Item = ({ producte }) => {
                         <img className="imagenProduct0" src={producte.img} alt="" />
                         
                         <Link to={`/detail/${producte.id}`} className='button-78'>Ver Detalles</Link>
-                        <h2>$ {producte.price*dolarblue}</h2>
+                        <h2>U$DT {producte.price}</h2>
                         <h3>Stock: {producte.stock}</h3>
                     </div>
         
