@@ -5,6 +5,10 @@ const Notification = ({ mensaje, tipo, classes }) => {
         position: 'fixed',
         top: 100,
         left:10,
+
+        zIndex: 10,
+
+
         width: 'auto',
         height: 'auto',
         padding: '10px',
