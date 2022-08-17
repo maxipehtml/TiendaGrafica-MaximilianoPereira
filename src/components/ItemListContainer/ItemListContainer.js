@@ -1,8 +1,10 @@
 import { useState,useEffect } from 'react'
-import { getProducts, getProductsByCategory } from '../../asyncMock'
+//import { getProducts, getProductsByCategory } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
 import './ItemListContainer.css'
 import { useParams } from 'react-router-dom'
+import { getDocs, collection, query, where } from 'firebase/firestore'
+import { database } from '../../services/firebase/index'
 
 
 const ItemListContainer = (props) => {
@@ -14,8 +16,25 @@ const ItemListContainer = (props) => {
     /* const category = categoryId.toUpperCase(); */
 
     useEffect(() =>{
+        const refData = collection(database, 'products')
+        const referenciaCollection = !categoryId ? refData : query(refData, where('category', '==', categoryId))
 
-        const dualFunction = categoryId ? getProductsByCategory : getProducts;
+        getDocs( referenciaCollection ).then(response => {
+            
+            const products = response.docs.map(docu => {
+                //const values = docu.data()
+                //console.log(values);
+                return { id: docu.id, ...docu.data()}
+            })
+            console.log(products);
+            setProducts(products);
+        }).catch(error => {
+            console.log(error);
+        }).finally(() => {
+            setLoading(false);
+        })
+
+/*         const dualFunction = categoryId ? getProductsByCategory : getProducts;
 
         
         dualFunction(categoryId).then(response => {
@@ -24,7 +43,9 @@ const ItemListContainer = (props) => {
             console.log(error)
         }).finally(() => {
             setLoading(false)
-        }) 
+        })  */
+
+
     }, [categoryId]);
 
 
