@@ -3,6 +3,11 @@ import { CartContext } from "../../context/CartContext"
 import CartProduct from "./CartProduct";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import './Cart.css'
+import { addDoc, collection } from "firebase/firestore";
+import { database } from "../../services/firebase";
+import { getProducts } from "../../asyncMock";
+
+
 
 const Cart = () => {
     const { getQuantity, clearCart, getTotal, cart } = useContext(CartContext)
@@ -15,14 +20,28 @@ const Cart = () => {
 
     let noProd = cantidadTotal === 0
 
-/*     useEffect(() => {
-
-        if (noProd) {
-            setNotification('No hay productos en el carrito', 'error',2)
-        }
+/*     const createProducts = () => {
         
-      }, []) */
 
+    
+    } */
+
+    const createBuy = () => {
+        const buy = {
+            buyer: {
+                name: 'Zeta',
+                phone: '123123123',
+                email: 'zeta@gmail.com',
+            },
+            items: cart,
+            total
+        }
+    console.log(buy);
+
+    addDoc(collection(database, 'sales'), buy).then(response =>{
+        console.log(response);
+    })
+    }
     
     if ( noProd ) {
         
@@ -47,7 +66,10 @@ const Cart = () => {
 
             <div className="confirmarCarrito ">
                 <button onClick={() => clearCart()} className="button-78 vaciarCarrito btns-cart">Vaciar Carrito</button>
-                <button className="button-78 btn-confirmar btns-cart">Confimar Carrito</button>
+
+                <button onClick={createBuy} className="button-78 btn-confirmar btns-cart" >Confimar Compra</button>
+
+
 
             <div className="confirmarCarrito">
                 <button onClick={() => clearCart()} className="button-78 vaciarCarrito">Vaciar Carrito</button>
