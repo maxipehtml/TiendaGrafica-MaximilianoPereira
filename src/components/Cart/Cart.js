@@ -65,7 +65,7 @@ const Cart = () => {
             <h2>Total: U$DT {total}</h2>
             <div className="confirmarCarrito ">
                 <button onClick={() => clearCart()} className="button-78 vaciarCarrito btns-cart">Vaciar Carrito</button>
-                <button onClick={() => createBuy()} className="button-78 btn-confirmar btns-cart" >Confimar Compra</button>
+                <button onClick={createBuy} className="button-78 btn-confirmar btns-cart" >Confimar Compra</button>
             </div>
             <ItemListContainer greeting="Segui comprando nuestros productos" />
 
