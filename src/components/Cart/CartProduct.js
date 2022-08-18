@@ -27,7 +27,11 @@ const CartProduct = ({ id, name, quantity, price, medidas }) => {
                     <h2>subTotal: U$DT {price * quantity} </h2>
                 </div>
                 <div>
+
                     <button className="button-78 btn-eliminar btns-cart" onClick={()=>productRemove(id)}>Eliminar</button>
+
+                    <button className="button-78 btn-eliminar" onClick={()=>productRemove(id)}>Eliminar</button>
+
                 </div>
             </div>
         </>

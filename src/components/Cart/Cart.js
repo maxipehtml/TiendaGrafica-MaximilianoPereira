@@ -63,9 +63,18 @@ const Cart = () => {
             </h1>
             {cart.map(prod => <CartProduct key={prod.id} {...prod}/>)}
             <h2>Total: U$DT {total}</h2>
+
             <div className="confirmarCarrito ">
                 <button onClick={() => clearCart()} className="button-78 vaciarCarrito btns-cart">Vaciar Carrito</button>
+
                 <button onClick={createBuy} className="button-78 btn-confirmar btns-cart" >Confimar Compra</button>
+
+
+
+            <div className="confirmarCarrito">
+                <button onClick={() => clearCart()} className="button-78 vaciarCarrito">Vaciar Carrito</button>
+                <button className="button-78 btn-confirmar">Confimar Carrito</button>
+
             </div>
             <ItemListContainer greeting="Segui comprando nuestros productos" />
 
