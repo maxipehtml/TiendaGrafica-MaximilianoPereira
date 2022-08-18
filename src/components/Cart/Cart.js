@@ -69,12 +69,6 @@ const Cart = () => {
 
                 <button onClick={createBuy} className="button-78 btn-confirmar btns-cart" >Confimar Compra</button>
 
-
-
-            <div className="confirmarCarrito">
-                <button onClick={() => clearCart()} className="button-78 vaciarCarrito">Vaciar Carrito</button>
-                <button className="button-78 btn-confirmar">Confimar Carrito</button>
-
             </div>
             <ItemListContainer greeting="Segui comprando nuestros productos" />
 
