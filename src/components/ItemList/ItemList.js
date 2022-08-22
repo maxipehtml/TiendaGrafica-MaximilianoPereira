@@ -6,9 +6,11 @@ const ItemList = ({products}) => {
         <> 
         <ul className="cards0 ">
             {products.map(product => (
+                (product.stock > 0 ?
                 <li key={product.id}>
-            <Item producte={product}/>
-            </li>
+                <Item producte={product}/>
+                </li> 
+                : null)
             ))}
         </ul>
         </>
