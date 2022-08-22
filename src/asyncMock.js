@@ -1,6 +1,6 @@
 const products = [
     { 
-        id: '0', 
+       
         name: 'Print 155.2', 
         price: 10, 
         category: 'cuadros', 
@@ -11,7 +11,7 @@ const products = [
         description:'Diseñado a través de Inteligencia Artificial. Prompt:"Beautiful cymatic mandala eyes with lotus crystal flowers and mushrooms"'
     },
     { 
-        id: '1', 
+       
         name: 'Print 108.1',  
         price: 12, 
         category: 'cuadros', 
@@ -22,7 +22,7 @@ const products = [
         description:'Diseñado a través de Inteligencia Artificial. Prompt:"Beautiful mandala eyes with lotus flowers"'
     },
     { 
-        id: '2', 
+       
         name: 'Print 96',  
         price: 11, 
         category: 'cuadros', 
@@ -34,7 +34,7 @@ const products = [
     },
 
     {
-        id: '3', 
+        
         name: 'Anillo Abrazo',  
         price: 12, 
         category: 'joyas',
@@ -47,7 +47,7 @@ const products = [
     },
 
     {
-        id: '4', 
+        
         name: 'Diseño A/V',  
         price: '100', 
         category: 'servicios',

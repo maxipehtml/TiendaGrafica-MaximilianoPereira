@@ -39,4 +39,17 @@
     .btns-cart{
         font-size: 11px;
     }
+    .form{
+        font-size: 3vw;
+    }
+    
+}
+.form{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form label{
+    font-weight: bold
 }
