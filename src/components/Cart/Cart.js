@@ -148,6 +148,7 @@ const Cart = () => {
             </form>
 
             <div className="confirmarCarrito">
+
                 <button
                     onClick={() => clearCart()}
                     className="button-78 vaciarCarrito btns-cart"
@@ -161,6 +162,7 @@ const Cart = () => {
                 >
                     Confimar Compra
                 </button>
+
             </div>
             <ItemListContainer greeting="Segui comprando nuestros productos" />
         </div>
@@ -168,3 +170,4 @@ const Cart = () => {
 };
 
 export default Cart;
+
