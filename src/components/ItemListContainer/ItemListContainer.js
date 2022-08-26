@@ -68,7 +68,7 @@ const ItemListContainer = (props) => {
     return (
         <>
             <h1 className="tituloTienda">
-                {props.greeting} {categoryId}
+                {props.greeting} {(categoryId?.toUpperCase())}
             </h1>
             <ItemList products={products} />
             <button
