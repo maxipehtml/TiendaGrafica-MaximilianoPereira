@@ -39,6 +39,7 @@ const Cart = () => {
             
 
             <div className="confirmarCarrito">
+
                 <button
                     onClick={() => clearCart()}
                     className="button-78 vaciarCarrito btns-cart"
@@ -48,9 +49,9 @@ const Cart = () => {
                 <Link to='/checkout'
                     className="button-78 btn-confirmar btns-cart"
                 >
+
                     Ir a Confirmar Compra
                 </Link>
-
             </div>
             <ItemListContainer greeting="Segui comprando nuestros productos" />
         </div>
@@ -58,3 +59,4 @@ const Cart = () => {
 };
 
 export default Cart;
+
