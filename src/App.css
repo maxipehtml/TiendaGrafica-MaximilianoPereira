@@ -9,6 +9,10 @@
 
 .App {
   text-align: center;
+  
+}
+html{
+  background-color: rgb(76, 203, 135)
 }
 
 .bigBanner{
