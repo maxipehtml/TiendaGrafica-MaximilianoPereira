@@ -36,13 +36,39 @@ const products = [
     {
         
         name: 'Anillo Abrazo',  
-        price: 12, 
+        price: 15, 
         category: 'joyas',
         img:'https://drive.google.com/uc?export=view&id=1aVBTcEvOfGuKamkTLA67iIRjyNUrVWsx', 
         stock: 5, 
         montaje: 'Anillo de Plata 925', 
         medidas: 'Talle n°17',
         description:'Anillo Abierto Ajustable modelado en Blender 3D.'
+
+    },
+    
+    {
+        
+        name: 'Teseractor',  
+        price: 12, 
+        category: 'joyas',
+        img:'https://drive.google.com/uc?export=view&id=1ip2nFw7kGVEIqdb37e0WIxXz0XPQc0UA', 
+        stock: 2, 
+        montaje: 'Alpaca', 
+        medidas: 'Unica',
+        description:'Joya modelada en Blender 3D.'
+
+    },
+    
+    {
+        
+        name: 'Anillo Diamante',  
+        price: 11, 
+        category: 'joyas',
+        img:'https://drive.google.com/uc?export=view&id=1OdaS5ykpVdKtv-biBAlVKyeIertGSZtJ', 
+        stock: 5, 
+        montaje: 'Anillo de Plata 925', 
+        medidas: 'Talle n°24',
+        description:'Anillo modelado en Blender 3D.'
 
     },
 
@@ -56,6 +82,17 @@ const products = [
         montaje: 'Programación Web Audiovisual/Video Animado y VR/Diseño de Imagen', 
         medidas: 'Pedir Cotizacion',
         description:'Servicio de Diseño Audiovisual'
+    },
+    {
+        
+        name: 'Diseño 3D',  
+        price: '20', 
+        category: 'servicios',
+        img:'https://drive.google.com/uc?export=view&id=1LVNdsZPYAcX-gX73wdAF5sKeezdX0qyy', 
+        stock: 1, 
+        montaje: 'Diseño 3D, Character Rigged, Enviroments', 
+        medidas: 'Pedir Cotizacion',
+        description:'Servicio de Diseño 3D'
     }
 ]
 
