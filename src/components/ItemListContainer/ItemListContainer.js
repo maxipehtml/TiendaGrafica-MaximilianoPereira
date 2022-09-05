@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-//import { getProducts, getProductsByCategory } from '../../asyncMock'
 import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css";
 import { useParams } from "react-router-dom";
@@ -35,7 +34,6 @@ const ItemListContainer = (props) => {
         getDocs(referenciaCollection)
             .then((response) => {
                 const products = response.docs.map((docu) => {
-                    //const values = docu.data()
                     console.log(docu.data);
                     return { id: docu.id, ...docu.data() };
                 });
@@ -49,16 +47,7 @@ const ItemListContainer = (props) => {
                 setLoading(false);
             });
 
-        /*         const dualFunction = categoryId ? getProductsByCategory : getProducts;
-    
-            
-            dualFunction(categoryId).then(response => {
-                setProducts(response)
-            }).catch(error => {
-                console.log(error)
-            }).finally(() => {
-                setLoading(false)
-            })  */
+
     }, [categoryId]);
 
     if (loading) {
@@ -71,13 +60,8 @@ const ItemListContainer = (props) => {
                 {props.greeting} {(categoryId?.toUpperCase())}
             </h1>
             <ItemList products={products} />
-            <button
-                disabled={products.length > 0}
-                onClick={uploadProducts}
-                className="button-78 btn-confirmar btns-cart"
-            >
-                ADD PROD
-            </button>
+            <>
+            { products.length === 0 ? <button onClick={uploadProducts} className="button-78 btn-confirmar btns-cart" >Añadir Productos</button> : null}</>
         </>
     );
 };

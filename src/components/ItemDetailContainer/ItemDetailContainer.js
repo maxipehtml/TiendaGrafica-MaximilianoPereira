@@ -23,13 +23,7 @@ const ItemDetailContainer = ({addItem}) => {
             setLoading(false)
         })
 
-/*         getProductsByID(productId).then(response => {
-            setProducts(response)
-        }).catch(error => {
-            console.log(error)
-        }).finally(() => {
-            setLoading(false)
-        }) */
+
         },[productId])
 
     if(loading){

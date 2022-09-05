@@ -60,9 +60,11 @@ export const CartContextProvider = ({ children }) => {
 
     const getTotal = () => {
         let total = 0
+
         cart.forEach(prod => {
             total += (prod.quantity*prod.price);
         })
+        
         return total
     }
 

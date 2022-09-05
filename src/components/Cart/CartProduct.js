@@ -30,8 +30,6 @@ const CartProduct = ({ id, name, quantity, price, medidas }) => {
 
                     <button className="button-78 btn-eliminar btns-cart" onClick={()=>productRemove(id)}>Eliminar</button>
 
-                    <button className="button-78 btn-eliminar" onClick={()=>productRemove(id)}>Eliminar</button>
-
                 </div>
             </div>
         </>

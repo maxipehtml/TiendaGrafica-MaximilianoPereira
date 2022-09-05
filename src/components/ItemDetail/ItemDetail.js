@@ -26,21 +26,6 @@ const ItemDetail = ({ id, name, img, description, price, stock, montaje, medidas
         
     }
 
- /////////////
-/*     const [dolarblue, setBlue] = useState(0);
-
-
-    useEffect(() => {
-
-        fetch('https://cors-solucion.herokuapp.com/https://api-dolar-argentina.herokuapp.com/api/dolarblue')
-        .then(response => {
-        return response.json()
-        })
-        .then (response => setBlue(response.venta))
-        .catch(error => {
-            setBlue(300)})
-    },[]) */
-    ///////////////////////////////
 
     return (
         <li key={id}>

@@ -31,6 +31,7 @@ const Cart = () => {
 
     return (
         <div className="carritoCompras">
+            <div className="cardCarrito">
             <h1>Carrito de Compras</h1>
             {cart.map((prod) => (
                 <CartProduct key={prod.id} {...prod} />
@@ -53,6 +54,8 @@ const Cart = () => {
                     Ir a Confirmar Compra
                 </Link>
             </div>
+            </div>
+            
             <ItemListContainer greeting="Segui comprando nuestros productos" />
         </div>
     );
