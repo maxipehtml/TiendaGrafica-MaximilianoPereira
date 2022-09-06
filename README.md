@@ -1,3 +1,4 @@
+
 <h1>E-Commerce with React Js</h1>
 Utilizando React Js, Javascript, Html y css. <br>
 Este proyecto se basa en crear una tienda digital para distintas categorias de productos. <br>
@@ -16,6 +17,5 @@ En caso de que el producto no este en stock desaparecerá del listado<br>
 Para borrar los productos y resetear la lista, tenemos que ir a la cloud firestore y borrarlos manualmente. Luego al actualizar la tienda se nos habilitara el boton de "Añadir Productos", se actualizará y se cargarán los productos que hayamos definido en el asyncMock<br>
 El componente Cart se encargará de mostrar los productos que hayamos añadido al carrito de compras, ahi podremos eliminar los productos que no queramos o confirmar nuestra compra, que nos lleva al componente Checkout<br>
 El Checkout nos pide Nombre y Email para validar nuestra compra, con lo que se reservan los productos y se elimina del stock la cantidad que se hayan adquirido en el pedido.
-
 
 
