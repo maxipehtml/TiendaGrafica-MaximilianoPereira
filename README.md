@@ -16,6 +16,18 @@ Podemos agregar mas categorias en el componente DataNavbar.js y mas productos en
 En caso de que el producto no este en stock desaparecerá del listado<br>
 Para borrar los productos y resetear la lista, tenemos que ir a la cloud firestore y borrarlos manualmente. Luego al actualizar la tienda se nos habilitara el boton de "Añadir Productos", se actualizará y se cargarán los productos que hayamos definido en el asyncMock<br>
 El componente Cart se encargará de mostrar los productos que hayamos añadido al carrito de compras, ahi podremos eliminar los productos que no queramos o confirmar nuestra compra, que nos lleva al componente Checkout<br>
-El Checkout nos pide Nombre y Email para validar nuestra compra, con lo que se reservan los productos y se elimina del stock la cantidad que se hayan adquirido en el pedido.
+El Checkout nos pide Nombre y Email para validar nuestra compra, con lo que se reservan los productos y se elimina del stock la cantidad que se hayan adquirido en el pedido.<br>
+La libreria Emailjs nos ayuda a enviar al email la compra con los datos finales de la confirmacion que queramos.<br>
+Aclaración en un archivo .env estan los datos de nuestra base de datos de firebase, necesitamos introducir esos datos para que funcione y traiga los productos. Se crea un archivo .env a la altura de .gitignore y package.json con los siguientes datos:<br>
+REACT_APP_apiKey=""<br>
+REACT_APP_authDomain=""<br>
+REACT_APP_projectId=""<br>
+REACT_APP_storageBucket=""<br>
+REACT_APP_messagingSenderId=""<br>
+REACT_APP_appId=""<br>
+REACT_APP_measurementId=""<br>
+Gracias !
+
+
 
 
