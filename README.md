@@ -1,5 +1,5 @@
 
-<h1>E-Commerce with React Js</h1>
+# E-Commerce with React Js
 Utilizando React Js, Javascript, Html y css. <br>
 Este proyecto se basa en crear una tienda digital para distintas categorias de productos. <br>
 Para clonar el proyecto: <br>
