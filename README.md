@@ -26,7 +26,7 @@ REACT_APP_storageBucket=""<br>
 REACT_APP_messagingSenderId=""<br>
 REACT_APP_appId=""<br>
 REACT_APP_measurementId=""<br>
-![image](https://raw.githubusercontent.com/maxipehtml/TiendaGrafica-MaximilianoPereira/master/public/img/giftienda.gif)
+![](https://raw.githubusercontent.com/maxipehtml/TiendaGrafica-MaximilianoPereira/master/public/img/giftienda.gif)
 Gracias !
 
 
