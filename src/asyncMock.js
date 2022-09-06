@@ -53,9 +53,9 @@ const products = [
         category: 'joyas',
         img:'https://drive.google.com/uc?export=view&id=1ip2nFw7kGVEIqdb37e0WIxXz0XPQc0UA', 
         stock: 2, 
-        montaje: 'Alpaca', 
+        montaje: 'Plata con Diamante Sintético', 
         medidas: 'Unica',
-        description:'Joya modelada en Blender 3D.'
+        description:'Joya modelada en Blender 3D'
 
     },
     

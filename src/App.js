@@ -6,14 +6,12 @@ import Checkout from "./components/Checkout/Checkout";
 import Cart from "./components/Cart/Cart.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartContextProvider } from "./context/CartContext";
-import { UserContextProvider} from "./context/UserContext";
 import { NotificationProvider } from "./notifications/Notification";
 
 function App() {
   return (
     <div className="App">
       <NotificationProvider>
-      <UserContextProvider>
         <CartContextProvider>
         <BrowserRouter>
           <Navbar />
@@ -35,7 +33,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </CartContextProvider>
-      </UserContextProvider>
       </NotificationProvider>
       
     </div>

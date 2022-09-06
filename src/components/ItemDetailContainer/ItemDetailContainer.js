@@ -27,7 +27,7 @@ const ItemDetailContainer = ({addItem}) => {
         },[productId])
 
     if(loading){
-        return <h2>Cargando Detalles!</h2>
+        return <div class="lds-hourglass"></div>
     }
     return (
     <>

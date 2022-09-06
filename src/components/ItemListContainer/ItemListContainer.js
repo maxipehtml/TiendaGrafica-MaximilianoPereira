@@ -12,7 +12,6 @@ const ItemListContainer = (props) => {
 
     const { categoryId } = useParams();
 
-    /* const category = categoryId.toUpperCase(); */
     const uploadProducts = () => {
         console.log(getProducts());
         getProducts().then((response) =>
@@ -51,7 +50,7 @@ const ItemListContainer = (props) => {
     }, [categoryId]);
 
     if (loading) {
-        return <h2>Cargando Productos !!!</h2>;
+        return <div class="lds-hourglass"></div>;
     }
 
     return (

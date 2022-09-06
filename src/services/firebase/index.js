@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 //import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDXn-PNBYTfO1ZjfxkwRgFegQBcGhaVIwg",
-  authDomain: "primerreactapptienda.firebaseapp.com",
-  projectId: "primerreactapptienda",
-  storageBucket: "primerreactapptienda.appspot.com",
-  messagingSenderId: "1053755032767",
-  appId: "1:1053755032767:web:df523b5f4e9162d6dfb20a",
-  measurementId: "G-T35C6GJFHK"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
+  measurementId: process.env.REACT_APP_measurementId
 };
 
 // Initialize Firebase
