@@ -12,6 +12,8 @@ import {
 } from "firebase/firestore";
 import { database } from "../../services/firebase";
 import NotificationContext from "../../notifications/Notification";
+import emailjs from 'emailjs-com';
+
 
 const Checkout = () => {
 
@@ -38,14 +40,22 @@ const Checkout = () => {
         </>
     }
 
-/*     const mandarRecibo = () => {
-        console.log(mailReg.value);
-        emailjs.send("service_dwm6j8j","template_6fqxvyr",{
-          from_name: nameReg.value,
-          emailLogin: mailReg.value,
-          total: totaldeCompra.toString(),
-        });
-      } */
+
+    function sendEmail() {
+
+        emailjs.send('service_dwm6j8j', 'template_56addt8', {
+            from_name: name,
+            emailLogin: email,
+            total: total,
+            idcompra: showId,
+        }, 'mqqEPBKm72IwYmk0p')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
 
     const createBuy = async () => {
         try {
@@ -102,6 +112,7 @@ const Checkout = () => {
                 batch.commit();
                 setShowid(salesAdd.id);
                 console.log(salesAdd.id);
+                sendEmail();
                 setCompraId(true);
 
                 clearCart();
