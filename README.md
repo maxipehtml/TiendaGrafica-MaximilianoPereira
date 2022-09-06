@@ -26,6 +26,7 @@ REACT_APP_storageBucket=""<br>
 REACT_APP_messagingSenderId=""<br>
 REACT_APP_appId=""<br>
 REACT_APP_measurementId=""<br>
+![](img/giftienda.gif)
 Gracias !
 
 
